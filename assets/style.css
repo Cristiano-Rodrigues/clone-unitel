@@ -202,7 +202,7 @@
 .services {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 130px;
   background-color: #F16223;
 }
@@ -219,6 +219,98 @@
 }
 .services .service p {
   margin: 0;
+}
+.services .service p a {
   color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+.services .service p a:hover {
+  color: #5C0F8B;
+}
+.services .service p a i {
+  margin-right: 15px;
+  font-size: 35px;
 }
 /* --- */
+
+/* App Unitel */
+.adversiting {
+  position: relative;
+  width: 100%;
+}
+.adversiting .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.adversiting .description h2 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #F16223;
+  font-family: "Poppins Bolder";
+}
+.adversiting .description p {
+  font-size: 16pt;
+  color: white;
+}
+.adversiting img {
+  width: 100%;
+}
+/* --- */
+
+/* Área de destaque */
+.highlighted h2 {
+  margin-top: 30px;
+  font-size: 45px;
+  color: #5C0F8B;
+  font-family: "Poppins Bolder";
+}
+.highlighted .img-card,
+.highlighted .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.highlighted .img-card .card {
+  width: 325px;
+  border: none;
+}
+.highlighted .img-card .card a,
+.highlighted .card-container .card .card-body a {
+  display: block;
+  width: fit-content;
+  margin-top: 40px;
+  padding: 13px 25px;
+  text-decoration: none;
+  color: #F16223;
+  background-color: #5C0F8B;
+  transition: .3s;
+}
+.highlighted .img-card .card a:hover {
+  background-color: #5C0F8B;
+}
+.highlighted .card-container .card{
+  width: 530px;
+  height: 600px;
+  border: none;
+  border-radius: 0;
+  transition: .3s;
+}
+.highlighted .card-container .card:hover {
+  box-shadow: 10px 20px 20px lightgray;
+}
+.highlighted .card-container .card:hover .card-body a {
+  color: white;
+  background-color: #F16223;
+}
+/* --- */
+
+/* Extra */
+.centered {
+  width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}

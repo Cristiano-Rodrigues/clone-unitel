@@ -145,6 +145,30 @@
   line-height: 80px;
   color: #5C0F8B;
 }
+.header .icons .search-input {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #F3F3F3;
+  transition: .3s;
+}
+.header .icons .search-input.visible {
+  display: block;
+  visibility: visible;
+}
+.header .icons .search-input input {
+  width: 100%;
+  padding: 2px;
+  border: none;
+  font-size: 12pt;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid #F17C49;
+}
 .header .icons .user {
   display: flex;
   flex-direction: column;

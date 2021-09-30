@@ -234,34 +234,6 @@
 }
 /* --- */
 
-/* App Unitel */
-.adversiting {
-  position: relative;
-  width: 100%;
-}
-.adversiting .description {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 900px;
-  transform: translateX(-50%);
-  z-index: 1000;
-}
-.adversiting .description h2 {
-  margin-bottom: 20px;
-  font-size: 60px;
-  color: #F16223;
-  font-family: "Poppins Bolder";
-}
-.adversiting .description p {
-  font-size: 16pt;
-  color: white;
-}
-.adversiting img {
-  width: 100%;
-}
-/* --- */
-
 /* Área de destaque */
 .highlighted h2 {
   margin-top: 30px;
@@ -305,6 +277,94 @@
 .highlighted .card-container .card:hover .card-body a {
   color: white;
   background-color: #F16223;
+}
+/* --- */
+
+/* App Unitel */
+.adversiting {
+  position: relative;
+  width: 100%;
+}
+.adversiting .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.adversiting .description h2 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #F16223;
+  font-family: "Poppins Bolder";
+}
+.adversiting .description p {
+  font-size: 16pt;
+  color: white;
+}
+.adversiting img {
+  width: 100%;
+}
+/* --- */
+
+/* Footer */
+.footer {
+  padding-top: 40px;
+  background-color: #5C0F8B;
+}
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-links ul {
+  width: 230px;
+}
+.footer .footer-links ul li {
+  color: white;
+  font-size: 12pt;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.footer .footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 10pt;
+  font-weight: normal;
+}
+.footer .footer-links .identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer-links .identity .logo {
+  margin-bottom: 40px;
+}
+.footer .footer-links .identity .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-links .identity .social-media i {
+  font-size: 20px;
+  color: #F16223;
+  transition: .3s;
+}
+.footer .footer-links .identity .social-media i:hover {
+  color: white;
+}
+.footer .base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: #F17C49;
+  font-size: 9pt;
+  border-top: 1px solid rgb(102, 57, 139);
+}
+.footer .base .terms a {
+  padding: 0 5px;
+  color: #F17C49;
+  text-decoration: none;
 }
 /* --- */
 

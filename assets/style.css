@@ -191,10 +191,10 @@
 
 /* Slides */
 .images {
-  height: 460px;
+  height: 540px;
 }
 .images img {
-  height: 460px;
+  height: 540px;
 }
 /* --- */
 
@@ -277,6 +277,109 @@
 .highlighted .card-container .card:hover .card-body a {
   color: white;
   background-color: #F16223;
+}
+/* --- */
+
+/* Área de Equipamentos */
+.equipments {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.equipments h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 45px;
+  text-align: center;
+  color: #5C0F8B;
+  font-family: "Poppins Bolder";
+}
+.equipments .slides {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.equipments .slides .slide-header ul {
+  display: flex;
+  padding: 0;
+  border-bottom: 1px solid #5C0F8B;
+}
+.equipments .slides .slide-header ul a {
+  display: block;
+  padding: 10px 35px;
+  color: #5C0F8B;
+  text-decoration: none;
+  transition: .3s;
+}
+.equipments .slides .slide-header ul a:hover {
+  color: white;
+  background-color: #4C4C4C;
+}
+.equipments .slides .slide-header ul a.selected {
+  font-weight: bolder;
+  color: #F16223;
+  background-color: #5C0F8B;
+}
+.equipments .slides .slide-body {
+  position: relative;
+  width: 100%;
+  max-width: 1070px;
+}
+.equipments .slides .slide-body .slide-control {
+  position: absolute;
+  top: 50%;
+  height: 300px;
+  padding: 0 10px;
+  font-size: 24pt;
+  line-height: 300px;
+  color: gray;
+  transition: .3s;
+  z-index: 1000;
+}
+.equipments .slides .slide-body .slide-control.prev {
+  left: 0;
+  transform: translate(calc(-100% - 20px), -50%);
+}
+.equipments .slides .slide-body .slide-control.next {
+  right: 0;
+  transform: translate(calc(100% + 20px), -50%);
+}
+.equipments .slides .slide-body .slide-control.prev:hover {
+  transform: translate(calc(-100% - 40px), -50%) scale(1.2);
+}
+.equipments .slides .slide-body .slide-control.next:hover {
+  transform: translate(calc(100% + 40px), -50%) scale(1.2);
+}
+.equipments .slides .slide-body .section {
+  display: none;
+}
+.equipments .slides .slide-body .section.visible {
+  display: block;
+}
+.equipments .slides .slide-body .module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25%;
+  height: 450px;
+}
+.equipments .slides .slide-body .module h3 {
+  font-family: "Poppins Bolder";
+  color: #F16223;
+}
+.equipments .slides .slide-body .module img {
+  width: 100%;
+  border: 1px solid lightgray;
+  transition: .3s;
+}
+.equipments .slides .slide-body .module img:hover {
+  transform: scale(1.05);
+}
+.equipments .slides .slide-body .module .price {
+  font-size: 22pt;
+  font-family: "Poppins Bolder";
+  color: #5C0F8B;
 }
 /* --- */
 

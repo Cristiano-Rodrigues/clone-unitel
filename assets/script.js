@@ -27,3 +27,19 @@ links.forEach(link => {
     targetElt.classList.add("visible");
   })
 });
+
+/* Simple slide animation */
+const prevControl = document.querySelector(".prev");
+const nextControl = document.querySelector(".next");
+const cardContainer = document.querySelector("#modules");
+
+prevControl.addEventListener("click", () => {
+  const first = cardContainer.querySelector(".module");
+  cardContainer.appendChild(first);
+});
+nextControl.addEventListener("click", () => {
+  const modules = cardContainer.querySelectorAll(".module");
+  const first = modules[0],
+        last = modules[modules.length - 1];
+  cardContainer.insertBefore(last, first);
+});

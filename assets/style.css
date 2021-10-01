@@ -324,6 +324,7 @@
   position: relative;
   width: 100%;
   max-width: 1070px;
+  height: 450px;
 }
 .equipments .slides .slide-body .slide-control {
   position: absolute;
@@ -357,12 +358,15 @@
   display: block;
 }
 .equipments .slides .slide-body .module {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 25%;
   height: 450px;
+  transition: .3s;
 }
 .equipments .slides .slide-body .module h3 {
   font-family: "Poppins Bolder";

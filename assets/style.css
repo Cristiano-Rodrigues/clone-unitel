@@ -41,7 +41,7 @@
 }
 .header .menu {
   display: block;
-  width: auto;
+  width: 100%;
 }
 .header .menu .top-menu {
   max-width: 730px;
@@ -132,8 +132,7 @@
   justify-content: center;
 }
 .header .menu .base-menu {
-  max-width: 1055px;
-  width: 1055px;
+  width: 100%;
 }
 .header .icons {
   display: flex;
